@@ -35,13 +35,16 @@ namespace W6_assignment_template.Services
             Console.WriteLine($"Player Gold: {_player.Gold}");
 
             // Example CRUD operations for Goblin
-            //var newGoblin = new Goblin("New Goblin", "Goblin", 1, 30, "None");
-            //_context.AddCharacter(newGoblin);
+            var newGoblin = new Goblin("New Goblin", "Goblin", 1, 30, "None");
+            _context.AddCharacter(newGoblin);
+            Console.WriteLine("Added new Goblin.");
 
-            //newGoblin.Level = 2;
-            //_context.UpdateCharacter(newGoblin);
+            newGoblin.Level = 2;
+            _context.UpdateCharacter(newGoblin);
+            Console.WriteLine("Updated new Goblin's level to 2.");
 
-            //_context.DeleteCharacter("New Goblin");
+            _context.DeleteCharacter("New Goblin");
+            Console.WriteLine("Deleted new Goblin.");
         }
     }
 }

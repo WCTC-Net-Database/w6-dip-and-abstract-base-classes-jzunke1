@@ -19,7 +19,7 @@ namespace W6_assignment_template.Models
 
         public override void UniqueBehavior()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} performs a ghostly action!");
         }
     }
 }

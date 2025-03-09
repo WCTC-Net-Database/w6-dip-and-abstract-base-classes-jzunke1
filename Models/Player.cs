@@ -12,7 +12,7 @@
 
         public override void UniqueBehavior()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} performs a unique player action!");
         }
     }
 }
